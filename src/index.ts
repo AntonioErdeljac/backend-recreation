@@ -1,3 +1,9 @@
-const a = (x: number) => console.log(x);
+import express from 'express';
+import http from 'http';
 
-a(3);
+const app = express();
+const server = http.createServer(app);
+
+server.listen(8000, () => {
+  console.log('Server running at http://localhost:8000/');
+});
