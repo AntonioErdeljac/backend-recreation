@@ -1,0 +1,5 @@
+const AUTHENTICATION = 'BACKEND-PRACTICE-AUTH';
+
+export default {
+  AUTHENTICATION,
+};

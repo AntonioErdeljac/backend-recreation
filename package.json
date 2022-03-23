@@ -23,6 +23,7 @@
     "@types/cookie-parser": "1.4.2",
     "@types/cors": "2.8.12",
     "@types/express": "4.17.13",
+    "@types/lodash": "4.14.180",
     "@types/mongoose": "5.11.97",
     "@types/node": "17.0.22",
     "@typescript-eslint/eslint-plugin": "5.16.0",
@@ -46,6 +47,7 @@
     "cors": "2.8.5",
     "dotenv": "16.0.0",
     "express": "4.17.3",
+    "lodash": "4.17.21",
     "mongoose": "6.2.8"
   }
 }
