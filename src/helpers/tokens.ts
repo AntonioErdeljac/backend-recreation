@@ -1,6 +1,6 @@
 import * as crypto from 'crypto';
 
-const secret = 'acadamler';
+const secret = 'backend-practice';
 
 const random = (length = 10, isNumeric = false): string => {
   const chars = isNumeric ? '1234567890' : 'ABCDEFGHIJKLMNOPRSTWXYZabcdefghijklmnoprstwxyz';
