@@ -5,4 +5,6 @@ export interface RoomInterface extends mongoose.Document {
   mode: string;
   roomName: string;
   type: string;
+  ownerId: string;
+  isClaimed: boolean;
 }
