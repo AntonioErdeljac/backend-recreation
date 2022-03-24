@@ -8,4 +8,5 @@ export default (router: express.Router): void => {
   router.post(paths.ROOMS, checkSession(), rooms.create);
   router.get(paths.ROOMS, checkSession(), rooms.get);
   router.delete(paths.ROOMS_ID, checkSession(), rooms.deleteById);
+  router.put(paths.ROOMS_ID, checkSession(), rooms.updateById);
 };

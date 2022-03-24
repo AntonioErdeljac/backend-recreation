@@ -1,3 +1,5 @@
+import { omit } from 'lodash';
+
 import { Room } from './schema';
 
 const isValid = (values: Record<string, any>): boolean => !new Room(values).validateSync();
@@ -5,6 +7,12 @@ const isValid = (values: Record<string, any>): boolean => !new Room(values).vali
 const get = (query: Record<string, any>) => Room.find(query);
 
 const getById = (id: string) => Room.findById(id);
+
+const updateById = (id: string, values: Record<string, any>) => {
+  const room = omit(values, ['_id']);
+
+  return Room.findOneAndUpdate({ _id: id }, room, { new: true });
+};
 
 const getByRoomName = (roomName: string) => Room.findOne({ roomName });
 
@@ -20,4 +28,5 @@ export default {
   isValid,
   getByRoomName,
   remove,
+  updateById,
 };
