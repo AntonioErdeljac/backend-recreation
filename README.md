@@ -1,4 +1,4 @@
-# Backend Recration
+# Backend Recreation
 
 Recreation of a backend using Node.js, MongoDB, Express & Typescript.
 
