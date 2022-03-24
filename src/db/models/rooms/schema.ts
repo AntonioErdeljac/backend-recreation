@@ -5,10 +5,10 @@ import { RoomInterface } from './interfaces';
 import { schemaTypes } from '../helpers';
 
 export const RoomSchema: mongoose.Schema = new mongoose.Schema({
-  isLocked: schemaTypes.boolean({ required: true, default: true }),
-  roomNamePrefix: schemaTypes.string({ required: true }),
-  roomNamePattern: schemaTypes.string({ required: true, default: 'uuid' }),
-  endDate: schemaTypes.date({ required: true }),
+  isLocked: schemaTypes.boolean({ default: true }),
+  roomName: schemaTypes.string({ required: true }),
+  mode: schemaTypes.string({ default: 'group' }),
+  type: schemaTypes.date({ default: 'personal' }),
 });
 
 export const Room: mongoose.Model<RoomInterface> = mongoose.model<RoomInterface>(
